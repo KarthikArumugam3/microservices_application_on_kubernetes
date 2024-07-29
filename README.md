@@ -10,7 +10,7 @@ This project demonstrates a Multi-tier microservices application deployed on Kub
 
 ### Architecture diagram:-
 
-![K8app](https://github.com/user-attachments/assets/5830c8ec-cb7b-4028-afbd-5de48d33aff2)
+![K8app](https://github.com/user-attachments/assets/2df67b10-bd0f-4340-977b-07977b1d6a70)
 
 ### Requirements:-
 1. Docker

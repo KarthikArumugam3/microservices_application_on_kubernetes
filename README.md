@@ -2,11 +2,11 @@
 
 This project demonstrates a Multi-tier microservices application deployed on Kubernetes. The application consists of a voting system with the following microservices:
 
-Voting App : Frontend application for voting.
-Redis: In-memory data store for saving votes input.
-Worker: Processes votes and stores the results in PostgreSQL.
-PostgreSQL: Database for storing voting results.
-Results App: Frontend application for displaying the voting results.
+1. Voting App: Frontend application for voting.
+2. Redis: In-memory data store for saving votes input.
+3. Worker: Processes votes and stores the results in PostgreSQL.
+4. PostgreSQL: Database for storing voting results.
+5. Results App: Frontend application for displaying the voting results.
 
 ### Architecture diagram:-
 

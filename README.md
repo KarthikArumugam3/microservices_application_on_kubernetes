@@ -10,12 +10,12 @@ This project demonstrates a Multi-tier microservices application deployed on Kub
 
 ### Architecture diagram:-
 
-![K8app](https://github.com/user-attachments/assets/1987beea-bd71-4e73-b944-c47f65e6630b)
+![K8app](https://github.com/user-attachments/assets/5830c8ec-cb7b-4028-afbd-5de48d33aff2)
 
 ### Requirements:-
 1. Docker
 2. Kubernetes
 3. kubectl
 4. Minikube (Optional, for local development)
-5. AWS CLI (For Amazon EKS)
+5. AWS CLI (Optional, For Amazon EKS)
 

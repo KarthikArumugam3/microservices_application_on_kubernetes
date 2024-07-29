@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: db
+  labels:
+    name: postgress-service
+    app: demo-voting-app 
+spec:
+  ports: # No nodeport since it will be a internal service
+    - port: 5432
+      targetPort: 5432
+  selector: # Link this service to the 
+    name: postgres-pod
+    app: demo-voting-app # part of the same app as voting app
+    
+      

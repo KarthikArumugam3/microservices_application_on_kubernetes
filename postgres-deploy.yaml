@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+#Specifying the name of the deployment
+metadata:
+  name: postgres-deploy
+  labels:
+    name: postgres-deploy
+    app: demo-voting-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: postgres-pod
+      app: demo-voting-app
+  template:
+    metadata:
+      name: postgres-pod
+      labels:
+        name: postgres-pod
+        app: demo-voting-app # part of the same app as voting app
+    spec:
+      containers:
+        - name: postgres # Name of the container
+          image: postgres:9.4 # the docker image file(docker hub or local image)
+          ports:
+            - containerPort: 5432 # port on which the application will be running or exposed on
+          env: # Worker pod and result pod connect to the db using these credntials to store and retrieve the votes. Ideally not safe to directly mention instead use a secret file to store credentials
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "postgres"
+      
